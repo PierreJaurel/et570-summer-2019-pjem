@@ -1,0 +1,63 @@
+<html>
+<head>
+  <title>Changing Blackground Images using CSS and HTML</title>
+  <style>
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+      }
+      .container{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        animation: animate 16s ease=in-out infinite;
+      }
+      .outer{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        Background: rgba(0,0,0,0.5)
+      }
+      .details{
+        position: absolute;
+        left: -50%;
+        top: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      @keyframes animate{
+        0%,100%{
+          Background-image: url(C:\Users\jaure\OneDrive\Documents\GitHub\et570-summer-2019-pjem\blackboard\1.jpeg)
+        }
+        25%{
+          Background-image: url(2.jpg)
+        }
+        50%{
+          Background-image: url(3.jpg)
+        }
+        75%{
+          Background-image: url(4.jpg)
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="outer">
+        <div class="details">
+          <h1>Changing Background Images</h1>
+          <h2>
+          <span>using HTML and CSS only</span> /
+          <span>Please subscribe our channel</span>
+          </h2>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
